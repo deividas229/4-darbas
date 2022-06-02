@@ -130,14 +130,7 @@ namespace _4_darbas
             }
         }
 
-        private void butKslap_Click(object sender, EventArgs e)
-        {
-            string Kopijuoti = listDB.SelectedItems[0].SubItems[2].Text;
-            Clipboard.SetText(Kopijuoti);
 
-            MessageBox.Show("Nukopijuotas vartotojo " + listDB.SelectedItems[0].SubItems[1].Text + " slaptazodis");
-        
-         }
 
         private void butAlanga_Click(object sender, EventArgs e)
         {
@@ -147,42 +140,6 @@ namespace _4_darbas
         private void butPnslap_Click(object sender, EventArgs e)
         {
             new Form3().Show();
-        }
-
-        private void butNew_Click(object sender, EventArgs e)
-        {
-            int ID = 1;
-
-            listDB.Items.Clear();
-
-            var slaptazodziai = new List<Slaptazodis>();
-
-            using (var reader = new StreamReader(path))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-            {
-                csv.Read();
-                csv.ReadHeader();
-
-                while (csv.Read())
-                {
-                    var irasas = new Slaptazodis
-                    {
-                        Vardas = csv.GetField("Vardas"),
-                        _Slaptazodis = csv.GetField("_Slaptazodis"),
-                        URL = csv.GetField("URL"),
-                        Komentaras = csv.GetField("Komentaras")
-                    };
-
-                    if (irasas.Vardas == txtPslap.Text)
-                        irasas._Slaptazodis = txtPvar.Text;
-
-                    listDB.Items.Add(new ListViewItem(new string[] { ID.ToString(), irasas.Vardas, irasas._Slaptazodis, irasas.URL, irasas.Komentaras }));
-
-                    slaptazodziai.Add(irasas);
-                    ID++;
-                }
-            }
-            Naujas(slaptazodziai);
         }
 
         private void butDel_Click(object sender, EventArgs e)
@@ -264,5 +221,7 @@ namespace _4_darbas
                 }
             }
         }
+
+
     }
 }

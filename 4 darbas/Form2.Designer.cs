@@ -37,16 +37,9 @@ namespace _4_darbas
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.butKslap = new System.Windows.Forms.Button();
             this.butRslap = new System.Windows.Forms.Button();
             this.butAlanga = new System.Windows.Forms.Button();
             this.butPnslap = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPvar = new System.Windows.Forms.TextBox();
-            this.txtPslap = new System.Windows.Forms.TextBox();
-            this.butNew = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTvard = new System.Windows.Forms.TextBox();
@@ -115,18 +108,6 @@ namespace _4_darbas
             this.columnHeader5.Text = "Komentaras";
             this.columnHeader5.Width = 123;
             // 
-            // butKslap
-            // 
-            this.butKslap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butKslap.Location = new System.Drawing.Point(181, 317);
-            this.butKslap.Margin = new System.Windows.Forms.Padding(2);
-            this.butKslap.Name = "butKslap";
-            this.butKslap.Size = new System.Drawing.Size(166, 30);
-            this.butKslap.TabIndex = 16;
-            this.butKslap.Text = "Kopijuoti slaptazodi";
-            this.butKslap.UseVisualStyleBackColor = true;
-            this.butKslap.Click += new System.EventHandler(this.butKslap_Click);
-            // 
             // butRslap
             // 
             this.butRslap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,7 +123,7 @@ namespace _4_darbas
             // butAlanga
             // 
             this.butAlanga.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butAlanga.Location = new System.Drawing.Point(351, 317);
+            this.butAlanga.Location = new System.Drawing.Point(259, 317);
             this.butAlanga.Margin = new System.Windows.Forms.Padding(2);
             this.butAlanga.Name = "butAlanga";
             this.butAlanga.Size = new System.Drawing.Size(166, 30);
@@ -163,79 +144,12 @@ namespace _4_darbas
             this.butPnslap.UseVisualStyleBackColor = true;
             this.butPnslap.Click += new System.EventHandler(this.butPnslap_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(11, 374);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Pakeisti slaptazodi:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(37, 405);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 19);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "vardas:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(13, 437);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 19);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Slaptazodis:";
-            // 
-            // txtPvar
-            // 
-            this.txtPvar.Location = new System.Drawing.Point(100, 406);
-            this.txtPvar.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPvar.Name = "txtPvar";
-            this.txtPvar.Size = new System.Drawing.Size(143, 20);
-            this.txtPvar.TabIndex = 23;
-            // 
-            // txtPslap
-            // 
-            this.txtPslap.Location = new System.Drawing.Point(100, 437);
-            this.txtPslap.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPslap.Name = "txtPslap";
-            this.txtPslap.Size = new System.Drawing.Size(143, 20);
-            this.txtPslap.TabIndex = 24;
-            // 
-            // butNew
-            // 
-            this.butNew.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butNew.Location = new System.Drawing.Point(41, 479);
-            this.butNew.Margin = new System.Windows.Forms.Padding(2);
-            this.butNew.Name = "butNew";
-            this.butNew.Size = new System.Drawing.Size(171, 26);
-            this.butNew.TabIndex = 25;
-            this.butNew.Text = "Atnaujinti ";
-            this.butNew.UseVisualStyleBackColor = true;
-            this.butNew.Click += new System.EventHandler(this.butNew_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(306, 374);
+            this.label5.Location = new System.Drawing.Point(11, 376);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(230, 19);
@@ -247,7 +161,7 @@ namespace _4_darbas
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(306, 405);
+            this.label6.Location = new System.Drawing.Point(11, 407);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 19);
@@ -256,7 +170,7 @@ namespace _4_darbas
             // 
             // txtTvard
             // 
-            this.txtTvard.Location = new System.Drawing.Point(366, 406);
+            this.txtTvard.Location = new System.Drawing.Point(71, 408);
             this.txtTvard.Margin = new System.Windows.Forms.Padding(2);
             this.txtTvard.Name = "txtTvard";
             this.txtTvard.Size = new System.Drawing.Size(170, 20);
@@ -266,7 +180,7 @@ namespace _4_darbas
             // 
             this.butDel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butDel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.butDel.Location = new System.Drawing.Point(336, 475);
+            this.butDel.Location = new System.Drawing.Point(41, 477);
             this.butDel.Margin = new System.Windows.Forms.Padding(2);
             this.butDel.Name = "butDel";
             this.butDel.Size = new System.Drawing.Size(171, 30);
@@ -284,16 +198,9 @@ namespace _4_darbas
             this.Controls.Add(this.txtTvard);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.butNew);
-            this.Controls.Add(this.txtPslap);
-            this.Controls.Add(this.txtPvar);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.butPnslap);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.butAlanga);
             this.Controls.Add(this.butRslap);
-            this.Controls.Add(this.butKslap);
             this.Controls.Add(this.listDB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSbar);
@@ -316,16 +223,9 @@ namespace _4_darbas
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.Button butKslap;
         private System.Windows.Forms.Button butRslap;
         private System.Windows.Forms.Button butAlanga;
         private System.Windows.Forms.Button butPnslap;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPvar;
-        private System.Windows.Forms.TextBox txtPslap;
-        private System.Windows.Forms.Button butNew;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTvard;
